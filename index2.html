@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git & GitHub</title>
+</head>
+<body>
+<h2> Git Reset Learning</h2>
+<p>There are two types of git reset: 
+  git reset --soft <commit> : This will move the HEAD to the specified commit, but it will not change the index or working directory. This means that the changes made in the commits after the specified commit will still be present in the working directory and can be staged again if needed.
+  git reset --hard <commit> : This will move the HEAD to the specified commit and discard all changes made in the commits after the specified commit. This means that the changes made in the working directory and index will be lost, and the repository will be in the state of the specified commit.
+    git reset --mixed <commit> : This will move the HEAD to the specified commit and reset the index to match the specified commit, but it will not change the working directory. This means that the changes made in the commits after the specified commit will still be present in the working directory, but they will not be staged for commit.
+      git reset HEAD~1 
+</p>  
+</body>
+</html>
